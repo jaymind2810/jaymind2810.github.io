@@ -1,149 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - Jaymin Patel</title>
+  <style>
+    :root {
+      --primary: #1f2937;
+      --accent: #2563eb;
+      --light-bg: #f9fafb;
+      --text: #111827;
+      --subtext: #6b7280;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light-bg);
+      margin: 0;
+      padding: 0;
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: 40px auto;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      color: var(--subtext);
+      font-size: 0.95rem;
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .section {
+      margin-top: 32px;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 14px;
+      color: var(--accent);
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .item-title {
+      font-weight: bold;
+      font-size: 1rem;
+      color: var(--primary);
+    }
+
+    .item-subtitle {
+      margin-top: 2px;
+      font-size: 0.9rem;
+      color: var(--subtext);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .skills span {
+      background: #e5e7eb;
+      color: #374151;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 20px;
+      color: #374151;
+    }
+
+    li {
+      margin-bottom: 8px;
+      margin-top: 6px;
+    }
+
+    .professional li {
+      line-height: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+      }
+
+      .section-title {
+        font-size: 1rem;
+      }
+
+      .contact {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
 </head>
-<body class="w3-light-grey">
-
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
-
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>MY BLOG</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
-</header>
-
-<!-- Grid -->
-<div class="w3-row">
-
-<!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="manali.jpg" alt="Nature" style="width:100%">
-    <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Jaymin Patel</h1>
+      <p class="contact">
+        📧 <a href="mailto:jayminpatel2810@gmail.com">jayminpatel2810@gmail.com</a> &nbsp;|&nbsp;
+        📞 <a href="tel:+918238218332">+91 8238218332</a> &nbsp;|&nbsp;
+        📍 Ahmedabad, India &nbsp;|&nbsp;
+      </p>
+      <p class="contact">
+        🧑‍💻 GitHub : <a href="https://github.com/jaymind2810" target="_blank"> jaymind2810</a> &nbsp;|&nbsp;
+        🔗 LinkedIn : <a href="https://www.linkedin.com/in/jayminpatel2810" target="_blank">jayminpatel2810</a>
+      </p>
     </div>
 
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
-        </div>
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <ul class="professional">
+        <li><strong>Backend Development:</strong> 4 years of experience in Django, Flask, and FastAPI for building scalable, secure web applications and RESTful/GraphQL APIs.</li>
+        <li><strong>Frontend Development:</strong> Proficient in React.js with hands-on experience in React Hooks, functional components, and lifecycle management. Skilled in Redux and Context API for efficient state management, and building responsive, user-focused interfaces using Material UI, TailwindCSS and modern UI/UX practices.</li>
+        <li><strong>Full-Stack Architecture:</strong> Strong grasp of frontend-backend architecture, clean code principles, and scalable design patterns. Adept at translating business requirements into modular, maintainable codebases with high performance and reliability.</li>
+        <li><strong>AI Integration:</strong> Practical experience integrating Large Language Models (LLMs) and speech-to-text services (Amazon Transcribe, AssemblyAI, Whisper) to enable intelligent, AI-powered features and automation in web applications.</li>
+        <li><strong>Performance Optimization:</strong> Skilled at identifying bottlenecks and improving responsiveness, speed, and resource efficiency through code refactoring, caching, and query tuning.</li>
+        <li><strong>Development Workflow:</strong> Experienced in Agile/Scrum environments with strong collaboration, client communication, and documentation skills. Proficient in version control using Git, GitHub, and GitLab.</li>
+      </ul>
+
+    </div>
+
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+      <div class="item">
+        <div class="item-title">Full-stack Developer – EsparkBiz</div>
+        <div class="item-subtitle">March 2024 – Present | Ahmedabad, India</div>
+      </div>
+      <div class="item">
+        <div class="item-title">Full-stack Developer – OpenEduCat</div>
+        <div class="item-subtitle">Aug 2021 – March 2024 | Ahmedabad, India</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Projects</div>
+
+      <div class="item">
+        <div class="item-title">🗺️ MyBox Social</div>
+        <div class="item-subtitle">React, Django, Mapbox, JWT, DRF, Stripe, AWS S3</div>
+        <ul>
+          <li>A location-based social platform offering an interactive virtual earth experience where users can claim land and place content-driven boxes.</li>
+          <li>Each box acts as a personal space for sharing content that others can view, like, and share.</li>
+          <li>Enables social networking by allowing users to explore other users’ boxes, interact with their content, and grow their network through connections.</li>
+          <li>Integrated Stripe for monetization and AWS S3 for secure media storage.</li>
+        </ul>
+      </div>
+
+
+      <div class="item">
+        <div class="item-title">🛒 E-commerce Platform</div>
+        <div class="item-subtitle">Django, DRF, React, Stripe</div>
+        <ul>
+          <li>Complete e-commerce system with user auth, payments, and admin panel.</li>
+          <li>Stripe used for checkout, subscriptions, and billing automation.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-title">🧠 AI-Powered Meeting Notes (DSD)</div>
+        <div class="item-subtitle">Flask, React, AssemblyAI, Whisper, Amazon Transcribe, JWT, Stripe, AWS S3</div>
+        <ul>
+          <li>Designed and implemented the backend architecture for a multi-tenant SaaS platform with secure, role-based access control using JWT authentication.</li>
+          <li>Enabled Super Admins to manage services and Customer Admins to configure roles, permissions, and onboard users with isolated tenant data models.</li>
+          <li>Integrated audio transcription pipelines using AssemblyAI, Whisper, and Amazon Transcribe, with support for multiple languages and formats.</li>
+          <li>Built custom prompt handling logic to generate intelligent, AI-powered meeting notes from transcribed text using LLMs.</li>
+          <li>Integrated Stripe for subscription-based billing, including customer onboarding, plan upgrades, invoice management, and webhook event processing.</li>
+          <li>Implemented AWS S3 for secure file uploads and storage, along with email delivery of summaries to designated recipients.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="item">
+        <div class="item-title">B.E. in Information Technology</div>
+        <div class="item-subtitle">Govt. Engineering College, Modasa – 2020</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <div class="skills">
+        <span>Python</span>
+        <span>Django</span>
+        <span>Flask</span>
+        <span>React</span>
+        <span>Redux</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>PostgreSQL</span>
+        <span>GraphQL</span>
+        <span>TailwindCSS</span>
+        <span>Docker</span>
+        <span>Git</span>
+        <span>AWS S3</span>
       </div>
     </div>
   </div>
-  <hr>
-
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <img src="mountain.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
-
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <img src="/w3images/avatar_g.jpg" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4><b>My Name</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
-    </div>
-  </div><hr>
-  
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Popular Posts</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Lorem</span><br>
-        <span>Sed mattis nunc</span>
-      </li>
-      <li class="w3-padding-16">
-        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Ipsum</span><br>
-        <span>Praes tinci sed</span>
-      </li> 
-      <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dorum</span><br>
-        <span>Ultricies congue</span>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Mingsum</span><br>
-        <span>Lorem ipsum dipsum</span>
-      </li>  
-    </ul>
-  </div>
-  <hr> 
- 
-  <!-- Labels / tags -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Tags</h4>
-    </div>
-    <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-    </p>
-    </div>
-  </div>
-  
-<!-- END Introduction Menu -->
-</div>
-
-<!-- END GRID -->
-</div><br>
-
-<!-- END w3-content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-</footer>
-
 </body>
 </html>
